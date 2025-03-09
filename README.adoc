@@ -37,10 +37,10 @@ For example, https://www.ozon.ru/product/fonar-dekorativnyy-navigator-93-213-nsl
 Looking ahead, this is the lamp that resulted:
 
 .FreeCAD version of Cassis
-image::pic/cassis.png[FreeCAD version of Cassis]
+image::pic/cassis.png[]
 
 .Printed and Assembled Cassis
-image::pic/cassis.gif[Printed and Assembled Cassis]
+image::pic/cassis.gif[]
 
 == Modeling
 
@@ -71,7 +71,7 @@ FreeCAD has its own https://wiki.freecad.org/Spreadsheet_Workbench[simple analog
 I will use it, although I sorely miss the usual sorting, filtering and basic formatting capabilities.
 
 .Table with all parameters
-image::pic/ss.png[Table with all parameters]
+image::pic/ss.png[]
 
 === Approach
 
@@ -95,7 +95,7 @@ It will be possible to add 4 identical legs to the assembly, or somehow improve 
 
 And you need to start drawing the main elements of the structure.
 
-== Naming
+=== Naming
 
 From the very first sketch, it becomes clear that, despite the simplicity of the product, it will have about a hundred parameters and you need to somehow agree with yourself on the naming format of all values.
 And despite the fact that FreeCAD generates names with a numeric suffix, it is better to name them yourself and meaningfully.
@@ -121,12 +121,12 @@ And finally, a suffix with the parameter type:
 
 There were about 70 parameters for the first project and these rules were quite enough.
 
-=== Master drawings
+=== Master sketches
 
 After completing the lesson on creating a https://wiki.freecad.org/Sketcher_Workbench[Sketch], modeling with a reduction in the number of degrees of freedom resembles a gaming.
 In which the inscription Fully Constrained means Level Complete :-)
 
-.Master sketch for the bottom of the stove created.
+.Master sketch for the bottom of the stove
 image::pic/master_bottom.png[]
 
 [NOTE]
@@ -158,7 +158,7 @@ And now the hinges break when you change the size of the width of the stove.
 In addition, there is a persistent feeling that the drawings of the front wall and the door should be further separated.
 Not sure how to do it best.
 
-.Master drawing of the front wall
+.Master sketch of the front wall
 image::pic/master_front.png[]
 
 
@@ -191,14 +191,14 @@ Beautiful!
 - Should I have increased the number of master Sketches in this case to simplify them?
 - Is the use of SubShapeBinder justified in such scenarios and in such quantities?
 - To temporarily hide some tool processing – I checked Suppressed (which does not work yet) and set the main parameter of the tool to 0 – is there a better way?
-- Applying the Fillet tool as the final transformation step seriously slows down the work with drawings.
-Seems I have to put them after tip feature.
+- Applying the Fillet tool as the final transformation step seriously slows down the work with model.
+Seems I have to put Fillet after Tip feature.
 Can I somehow disable the calculation for drawing, but use it during export to STL?
 - In the reference master drawings, which are used for external geometry in several parts, not all profiles are closed.
 But this does not correspond to best practices.
 Is this a normal exception to the rules or is it still unacceptable?
 - I constantly renamed Origin to the name of the Body, so as not to get confused in the representations.
-Can I make the name of the Body coordinates use its name?
+Can I make the name of the Body coordinates use its name by default?
 
 == What's next?
 
