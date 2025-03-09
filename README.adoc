@@ -14,7 +14,7 @@ The solution should be as simple and concise as possible – KISS (Keep It Simpl
 Ideally, it should be possible to enter the main product parameters in an online form and get the finished parts for assembly.
 Something similar to the https://gridfinity.perplexinglabs.com/[Gridfinity automatic model generator].
 
-[note]
+[NOTE]
 FreeCAD's Python API should enable this scenario in the future.
 
 == Idea
@@ -24,6 +24,7 @@ As a first experience, I decided to design a decorative lamp in the form of a wi
 image::pic/proto1.png[]
 .These photos were used as inspiration
 image::pic/proto2.png[]
+
 
 Inside the stove, you can install translucent interchangeable parts to create different lighting effects.
 For example, using https://shop.thehueforge.com/pages/examples[HueForge technology] for stained glass and lithophanes.
@@ -55,7 +56,7 @@ Where to define the parameters?
 When designing information systems, it is important to ensure that all data is stored in a single source.
 Obviously, the approach here should be the same.
 
-[note]
+[NOTE]
 The first thought was to use Google Sheets as a repository of reference information, where there were already sketches of product parameters.
 There is a familiar and rich functionality and data is available through the REST API.
 However, the necessary FreeCAD integration was not found.
@@ -123,7 +124,7 @@ In which the inscription Fully Constrained means Level Complete :-)
 .Master sketch for the bottom of the stove created.
 image::pic/master_bottom.png[]
 
-[note]
+[NOTE]
 I used the best practices for defining Constraints from the description, although I clearly need to thoroughly study the https://forum.freecad.org/viewtopic.php?f=36&t=30104[80-page lecture].
 
 === SubShapeBinder
@@ -135,7 +136,7 @@ Although I have not found from scratch a thorough and simple training lesson on 
 After the first transformations of the bottom, which are common with the top part, I defined the second SubShapeBinder.
 In order to make a lid on its basis and without repetition.
 
-[warning]
+[NOTE]
 Everything worked out, although I'm not sure if this is the optimal solution to the problem.
 
 === Bindings, positioning and displacement
@@ -155,7 +156,7 @@ Not sure how to do it best.
 .Master drawing of the front wall
 image::pic/master_front.png[]
 
-[warning]
+[NOTE]
 I would like to hear the opinion of experts on this matter.
 Too many parameters visually look ugly, and this should not be the case.
 
@@ -164,7 +165,7 @@ Too many parameters visually look ugly, and this should not be the case.
 For modeling the latch, it seemed excessive to me to use the Part Design tools based on sketches.
 With a cone primitive, which was subtracted from the door and added to the latch, the solution looked simpler.
 
-[warning]
+[NOTE]
 Although I'm not sure and would like an outside opinion :/
 
 == Result
