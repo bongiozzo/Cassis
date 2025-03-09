@@ -156,6 +156,7 @@ Not sure how to do it best.
 .Master drawing of the front wall
 image::pic/master_front.png[]
 
+
 [NOTE]
 I would like to hear the opinion of experts on this matter.
 Too many parameters visually look ugly, and this should not be the case.
@@ -171,9 +172,12 @@ Although I'm not sure and would like an outside opinion :/
 == Result
 
 As a result, everything worked out.
+
+xref:Cassis.FCStd[Cassis.FCStd] - FreeCAD project.
+
 When changing the main parameter – the width of the stove, the entire project is recalculated.
 
-This makes it possible to create such lamps in any size, for any lamps.
+This makes it possible to create such lamps in any size, for any LEDs.
 Beautiful!
 
 == Remaining questions...
@@ -196,4 +200,4 @@ Can I make the name of the Body coordinates use its name?
 - Try to implement the generation and export of parts using a Python script
 - It would be interesting to generate a stained glass backlight pattern using AI
 
-xref:README.adoc[Russian]
+xref:README.ru.adoc[Russian]
