@@ -6,7 +6,7 @@ This is my first experience modeling a multi-part product in a parametric CAD - 
 Before starting, I reviewed the https://wiki.freecad.org/Tutorials[tutorials in the Modeling Parts section].
 
 The main goal of this project is to understand FreeCAD through a practical example, while using the best practices.
-I must admit that the project had been built in Blender before, but it was obvious that the tool was chosen incorrectly.
+I must admit that the project xref:oven.blend[had been built in Blender before], but it was obvious that the tool was chosen incorrectly.
 Therefore, I immediately wanted to do a thorough job in FreeCAD.
 
 When everything is done correctly, the solution turns out beautiful.
