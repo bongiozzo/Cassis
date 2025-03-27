@@ -11,7 +11,7 @@ def create_base(base_height) -> Part:
     part_base = extrude(sk_base + ears, base_height)
     part_base -= extrude(Plane(part_base.faces().sort_by()[-1]) * offset(sk_base, -BOTTOM_T), -(base_height-BOTTOM_T))
 
-#! Replace with flipped parts
+    #! Replace with flipped parts?
     sk_holders = Pos(-HOLDER_X_O,HOLDER_Y_O) * Rectangle(HOLDER_X, BOTTOM_T, align=(Align.MIN, Align.MAX)) + \
                  Pos(-HOLDER_X_O,HOLDER_Y_O) * Rectangle(BOTTOM_T, HOLDER_X, align=(Align.MIN, Align.MAX)) + \
                  Pos(HOLDER_X_O,HOLDER_Y_O) * Rectangle(HOLDER_X, BOTTOM_T, align=(Align.MAX, Align.MAX)) + \
@@ -67,7 +67,7 @@ def create_top() -> Part:
     sk_hole = Pos(-(BOTTOM_X/2-TUBE_BACK_O),0) * Circle(TUBE_D/2)
     part_top -= extrude(sk_hole , TOP_Z)
 
-#! FIx orientation?
+    #! FIx orientation?
     part_top.label = "Top"
     return Pos(0,0,BOTTOM_Z_O) * Rot(180, 0, 0) * part_top
 
@@ -168,5 +168,5 @@ def create_front_assembly() -> Compound:
 
     front = Compound(label="Front", children=[part_front, part_door, part_latch])
 
-#! Why Y and not Z were rotated? ) 
+    #! Why Y and not Z were rotated? ) 
     return Pos(BACK_X_O-FRONT_T/2,0,0) * Rot(90, 90, 0) * front
