@@ -12,6 +12,7 @@ image::pic/proto1.png[]
 .These photos were used as inspiration
 image::pic/proto2.png[]
 
+
 The design of the product is elementary and easily imagined even without modeling experience.
 The bottom of the stove, to which the battery and light block are attached.
 The top, which repeats the dimensions of the bottom, but differs only in the presence of a hole for the pipe.
@@ -35,7 +36,7 @@ image::pic/cassis.gif[]
 
 == FreeCAD
 
-I must admit that the prototype was xref:blob/main/cassis.blend[initially built in Blender], but it was obvious that the tool was chosen incorrectly.
+I must admit that the prototype was xref:blob/main/cassis.blend[initially built in Blender – cassis.blend], but it was obvious that the tool was chosen incorrectly.
 It is just a very good (almost perfect) example of open-source software in the 3D area.
 
 Next step was about parametric CAD, and the open-source choice is obvious as well – FreeCAD.
@@ -126,11 +127,11 @@ There were about 70 parameters for the first project, and these rules were quite
 After completing the lesson on creating a https://wiki.freecad.org/Sketcher_Workbench[Sketch], modeling with a reduction in the number of degrees of freedom resembles a game.
 In which the inscription "Fully Constrained" means "Level Complete" :-)
 
-.Master sketch for the bottom of the stove
-image::pic/master_bottom.png[]
-
 [NOTE]
 I used the best practices for defining Constraints from the description, although I clearly need to thoroughly study the https://forum.freecad.org/viewtopic.php?f=36&t=30104[80-page lecture].
+
+.Master sketch for the bottom of the stove
+image::pic/master_bottom.png[]
 
 === SubShapeBinder
 
@@ -158,12 +159,12 @@ And now the hinges break when you change the size of the width of the stove.
 In addition, there is a persistent feeling that the drawings of the front wall and the door should be further separated.
 Not sure how to do it best.
 
-.Master sketch of the front wall
-image::pic/master_front.png[]
-
 [NOTE]
 I would like to hear the opinion of experts on this matter.
 Too many parameters visually look ugly, and this should not be the case.
+
+.Master sketch of the front wall
+image::pic/master_front.png[]
 
 === Primitives
 
@@ -234,8 +235,8 @@ The code of Algebra mode was especially dry and beautiful to my taste.
 
 The process of modeling from scratch after tutorials was easy.
 
-xref:tree/main/build123d[Resulting code is very small]. 
-It's still not optimized, so I'm pretty sure that it can be much more elegant, but I 
+xref:tree/main/build123d[Resulting code is very small].
+It's still not optimized, so I'm pretty sure that it can be much more elegant.
 Modeling with Jupiter Notebook and OCP CAD Viewer is the best experience for me:
 
 - It is impossible to get lost in an inconvenient user interface 
